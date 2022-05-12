@@ -1,0 +1,27 @@
+======================================== SETUP ======================================
+Create an empty folder 
+Open in Integarted terminal
+npm init (enter enter karat jaicha) -> package.json gets created
+npm install express mongoose ejs -> node modules and package-lock.json gets created
+
+====================================== COPY PASTE ===================================
+create a blank index.js file
+copy paste the contents on index.js file in this repo in the blank file
+copy paste db.js in a new db folder 
+copy paste students.js  in models folder [DATABASE]
+copy routes.js in a new routes folder [ROUTES]
+copy studentController.js in a new controllers folder [LOGIC]
+copy paste view folder [FRONTEND CODE]
+
+======================= UPDATE ACCORDING TO PROBLEM STATEMENT =======================
+routes.js
+db.js
+students.js 
+studentController.js
+index.ejs (along with partial folder)
+
+======================================== RUN ========================================
+node index.js
+<Code running on localhost:3000>
+<Route using /students to see the table>
+<Change routes (refer to routes.js) to call functions>

@@ -1,0 +1,55 @@
+<%- include('./partials/header.ejs') %>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 mt-5">
+      <h2 class="alert alert-success text-center">List of Students</h2>
+        <table class="table">
+          <tr>
+            <th></th>
+            <th>Sr. No.</th>
+            <th>Name</th>
+            <th>Roll No.</th>
+            <th>WAD</th>
+            <th>DSBDA</th>
+            <th>CNS</th>
+            <th>CC</th>
+            <th>AI</th>
+          </tr>
+          <% let i = 1 %>
+          <% data.forEach((student) => { %>
+          <tr>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault"> </label>
+              </div>
+            </td>
+            <td><%= i++ %></td>
+            <td><%= student.name %></td>
+            <td><%= student.roll %></td>
+            <td><%= student.wad %></td>
+            <td><%= student.dsbda %></td>
+            <td><%= student.cns %></td>
+            <td><%= student.cc %></td>
+            <td><%= student.ai %></td>
+            <td>
+                <form method="get" action="/students/delete/<%= student._id %>">
+                    <button class="btn btn-danger" type="submit">
+                        <i class="fa fa-trash text-white"></i>
+                    </button>
+                </form>
+            </td>
+          </tr>
+          <% }) %>
+        </table>
+        <button class="btn btn-primary">Update Marks</button>
+    </div>
+  </div>
+</div>
+<br><br>
+<%- include('./partials/footer.ejs') %>

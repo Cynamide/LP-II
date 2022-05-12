@@ -1,0 +1,13 @@
+=============================== SETUP ============================
+Copy paste index.html
+Copy paste main.js
+Create a folder 'server'
+cd server 
+npm init
+npm install express ( node modules, package json files are loaded)
+node index.js
+
+================================ RUN =============================
+Open index.html with live server
+GET : Initial data is loaded
+POST : Data from form is updated on table and in console
